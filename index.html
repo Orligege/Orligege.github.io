@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<title>我的作品集</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>我的作品集 | GitHub Pages</title>
+  <meta name="description" content="橫幅 Banner、粉專社群圖片、一頁式銷售頁案例作品集" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<h1>你好，我是 ______</h1>
-<p>歡迎來到我的作品集網站！</p>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>你的名字 / Brand</h1>
+      <p>專長：Banner 設計｜社群視覺｜一頁式銷售頁</p>
+      <nav>
+        <a href="#banners">Banner</a>
+        <a href="#social">粉專圖片</a>
+        <a href="#sales">一頁式銷售頁</a>
+        <a href="#about">關於我</a>
+        <a href="#contact">聯絡</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="banners">
+      <h2>Banner 精選</h2>
+      <div class="grid">
+        <figure class="card">
+          <a href="assets/images/banners/sample-banner-1.jpg" data-lightbox>
+            <img src="assets/images/thumbnails/sample-banner-1.jpg" alt="活動促銷 Banner 範例" loading="lazy">
+          </a>
+          <figcaption>活動促銷 Banner 範例</figcaption>
+        </figure>
+        <figure class="card">
+          <a href="assets/images/banners/sample-banner-2.jpg" data-lightbox>
+            <img src="assets/images/thumbnails/sample-banner-2.jpg" alt="品牌主視覺 Banner 範例" loading="lazy">
+          </a>
+          <figcaption>品牌主視覺 Banner 範例</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="social">
+      <h2>粉專社群圖片</h2>
+      <div class="grid">
+        <figure class="card">
+          <a href="assets/images/social/sample-social-1.jpg" data-lightbox>
+            <img src="assets/images/thumbnails/sample-social-1.jpg" alt="粉專貼文圖 A/B 測試" loading="lazy">
+          </a>
+          <figcaption>粉專貼文圖 A/B 測試</figcaption>
+        </figure>
+        <figure class="card">
+          <a href="assets/images/social/sample-social-2.jpg" data-lightbox>
+            <img src="assets/images/thumbnails/sample-social-2.jpg" alt="節慶主題貼文圖" loading="lazy">
+          </a>
+          <figcaption>節慶主題貼文圖</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="sales">
+      <h2>一頁式銷售頁</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="thumb">
+            <a href="projects/salespage-template/index.html">
+              <img src="assets/images/thumbnails/salespage-thumb.jpg" alt="一頁式銷售頁模板預覽" loading="lazy">
+            </a>
+          </div>
+          <div class="project-info">
+            <h3><a href="projects/salespage-template/index.html">銷售頁模板</a></h3>
+            <p>可直接複製為新專案，替換文案與圖片即可上線。</p>
+            <ul class="meta">
+              <li>任務：產品宣傳頁設計</li>
+              <li>角色：視覺、切版、轉換優化</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>關於我</h2>
+      <p>在此放上你的經歷與服務項目，凸顯你的價值與差異化。</p>
+      <ul>
+        <li>5+ 年品牌與電商視覺經驗</li>
+        <li>熟悉 A/B 測試與轉換率優化</li>
+        <li>服務產業：美妝、3C、餐飲</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>聯絡</h2>
+      <p>合作洽談：<a href="mailto:you@example.com">you@example.com</a></p>
+      <p>更多作品：<a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> 你的名字</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
